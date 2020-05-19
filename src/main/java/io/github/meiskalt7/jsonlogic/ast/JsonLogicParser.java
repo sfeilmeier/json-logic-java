@@ -18,7 +18,7 @@ public final class JsonLogicParser {
 
     public static JsonLogicNode parse(String json) throws JsonLogicParseException {
         try {
-            return parse(JsonParser.parseString(json));
+            return parse(new JsonParser().parse(json));
         } catch (JsonSyntaxException e) {
             throw new JsonLogicParseException(e);
         }

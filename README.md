@@ -1,3 +1,5 @@
+NOTE: This is a temporary fork of https://github.com/meiskalt7/json-logic-java. It was required, because the original library requires Gson 2.8.6; but Gson 2.8.6 is not compatible with OSGi on Java 8 as it has the wrong manifest headers - see https://github.com/google/gson/issues/1601
+
 # json-logic-java
 
 This parser accepts [JsonLogic](http://jsonlogic.com) rules and executes them in Java without Nashorn.

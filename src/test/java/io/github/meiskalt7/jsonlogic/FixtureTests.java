@@ -22,7 +22,7 @@ class FixtureTests {
     public static void beforeAll() {
         InputStream inputStream = FixtureTests.class.getClassLoader()
             .getResourceAsStream("fixtures.json");
-        JsonArray json = JsonParser.parseReader(new InputStreamReader(inputStream))
+        JsonArray json = new JsonParser().parse(new InputStreamReader(inputStream))
             .getAsJsonArray();
 
         // Pull out each fixture from the array.
